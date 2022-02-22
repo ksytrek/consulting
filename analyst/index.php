@@ -66,8 +66,9 @@ include './navber.php';
                                                 <td>
                                                     <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#md-<?php echo $row['id_pj']; ?>" data-whatever="@mdo">รายละเอียด</button>
                                                     <a class="btn btn-success btn-sm" data-toggle="modal" data-target="#ed-<?php echo $row['id_pj']; ?>" data-whatever="@mdo">แก้ไข</a>
+                                                    <a class="btn btn-danger btn-sm" href="../report_pdf.php?id=<?php echo $row['id_pj']; ?>">export</a>
                                                     <a class="btn btn-danger btn-sm" href="javascript:detele_pj(<?php echo $row['id_pj']; ?>)">ลบ</a>
-
+                                                    
                                                 </td>
 
                                                 <div class="modal fade" id="md-<?php echo $row['id_pj']; ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
