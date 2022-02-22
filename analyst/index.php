@@ -149,7 +149,7 @@ include './navber.php';
                                                                         <div class="control-group">
                                                                             <label class="control-label">รูปแบบ</label>
                                                                             <select class="form-control" name="model_pj-<?php echo $row['id_pj']; ?>" required>
-                                                                                <option value="<?php echo $row['id_model_pj']; ?>" selected><?php echo $row['name_model_pj']; ?></option>
+                                                                                <option value="<?php echo $row['id_model_pj']; ?>" disabled selected><?php echo $row['name_model_pj']; ?></option>
                                                                                 <?php
                                                                                 $sql_select = "SELECT * FROM `model_pj`";
                                                                                 foreach (Database::query($sql_select, PDO::FETCH_ASSOC) as $select) :
